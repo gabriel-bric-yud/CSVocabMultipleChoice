@@ -39,6 +39,7 @@ h1 {
     text-align: center;
     justify-items: center;
     position: relative;
+    max-width: 600px;
 }
 
 .container {
