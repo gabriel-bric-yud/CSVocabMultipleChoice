@@ -147,10 +147,10 @@ h1 {
 
 @media (min-width: 900px) {
   .topContainer {
-    max-width: 850px;
+    max-width: 840px;
   }
   #question {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .playButton {
@@ -160,11 +160,11 @@ h1 {
   }
 
   .multipleChoice {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #choiceA, #choiceB, #choiceC, #choiceD {
-    font-size: 40px;
+    font-size: 35px;
     
   }
 
