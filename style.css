@@ -62,6 +62,7 @@ h1 {
   text-align: center;
   margin: 5px 5px;
   font-size: 20px;
+  align-self: center;
 }
 
 #choiceA, #choiceB, #choiceC, #choiceD {
@@ -161,6 +162,7 @@ h1 {
 
   .multipleChoice {
     font-size: 25px;
+    align-self: center;
   }
 
   #choiceA, #choiceB, #choiceC, #choiceD {
