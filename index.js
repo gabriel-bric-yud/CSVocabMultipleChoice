@@ -826,7 +826,7 @@ let vocabArrayFinal = [
     definition: 'A number which corresponds to the numerical place an element is in an array.'
   },
   {
-    vocab: 'Inintialization List',
+    vocab: 'Initialization List',
     definition: 'A series of values seperated by commas to be used as data in an array.'
   },
   {
