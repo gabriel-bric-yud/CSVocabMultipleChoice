@@ -151,7 +151,7 @@ h1 {
     max-width: 840px;
   }
   #question {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .playButton {
@@ -166,7 +166,7 @@ h1 {
   }
 
   #choiceA, #choiceB, #choiceC, #choiceD {
-    font-size: 35px;
+    font-size: 30px;
     
   }
 
