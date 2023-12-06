@@ -984,7 +984,7 @@ function createQuestion() {
     newAnswer = vocabArrayFinal[i].vocab
     position = Math.floor(Math.random() * 4) + 1
     document.querySelector("#question").textContent = newQuestion
-    console.log(position)
+    console.log(document.querySelector("#question").textContent)
     addChoice(position, newAnswer)
 
     for (let x = 1; x <= 4; x++) {
@@ -992,8 +992,8 @@ function createQuestion() {
             let randomAnswer =  Math.floor(Math.random() * vocabArrayFinal.length)
             while (vocabArrayFinal[randomAnswer].vocab == newAnswer || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceA").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceB").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceC").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceD").textContent) {
               randomAnswer =  Math.floor(Math.random() * vocabArrayFinal.length)
-              console.log(randomAnswer)
             }
+            console.log(vocabArrayFinal[randomAnswer].vocab)
             addChoice(x, vocabArrayFinal[randomAnswer].vocab)
         }
     }
