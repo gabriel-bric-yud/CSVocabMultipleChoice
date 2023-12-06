@@ -1036,7 +1036,27 @@ let vocabArrayFinal = [
       {
     vocab:  'Logical Operators',
     definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
-  },  
+  },
+       {
+    vocab:  'Oval',
+    definition: 'Flowchart symbol for start and end of a program. Called Terminal symbols.'
+  },
+   {
+    vocab:  'Parallelogram',
+    definition: 'Flowchart for displaying information or reading input. Called Input/Outou symbols.'
+  },
+   {
+    vocab:  'Rectangle',
+    definition: 'Flowchart symbol for doing calculations and tasks. Called Processing symbols.'
+  },
+   {
+    vocab:  'Diamond',
+    definition: 'Flowchart symbol for decision structure such as if/else, and some repetition structures such as while loop and conditioned control loops.'
+  },
+   {
+    vocab:  'Hexagon',
+    definition: 'Flowchart symbol for some repetition structures such as count-controlled loops and for loops.'
+  }
 ]
 
 
