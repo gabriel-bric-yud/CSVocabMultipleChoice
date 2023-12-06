@@ -711,7 +711,7 @@ let vocabArrayFinal = [
   },
   {
     vocab: 'Parameter, or Parameter Variable',
-    definition: 'A spedcial placeholder variable that recieves an argument when a module is called.'
+    definition: 'A special placeholder variable that recieves an argument when a module is called.'
   },
   {
     vocab: 'Parameter List',
