@@ -972,7 +972,71 @@ let vocabArrayFinal = [
   {
     vocab:  'Count-Controlled loop ',
     definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
-  }  
+  },
+    {
+        vocab: 'Program',
+        definition: 'A set of instructions that a computer follows to perform a task.'
+    },
+    {
+        vocab:  'American Standard Code for Information Interchange (ASCII)',
+        definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
+    },
+    {
+        vocab:  'Byte',
+        definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
+    },
+    {
+        vocab:  'Bit',
+        definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
+    },
+      {
+    vocab:  'Machine Language',
+    definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
+  },
+      {
+    vocab:  'Assembly Language',
+    definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
+  },
+      {
+    vocab:  'Compiler',
+    definition: 'A program that translates a high-level language program into a separate machine language program.'
+  },
+  {
+    vocab:  'Interpreter',
+    definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
+  },
+      {
+    vocab:  'Assembler',
+    definition: 'A special program used to translate an assembly language program to a machine language program.'
+  },
+      {
+    vocab:  'Low-level Language',
+    definition: "A language that provides little or no abstraction from a computer's instruction set."
+  },
+  {
+    vocab:  'High-level Language ',
+    definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
+  },
+      {
+    vocab:  'Syntax Error',
+    definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
+  },
+      {
+    vocab:  'Logic Error',
+    definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
+  },
+      {
+    vocab:  'Boolean Expressions',
+    definition: 'Expressions that can be evaluated as either true or false.'
+  },
+  {
+    vocab:  'Relational Operator',
+    definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
+  },
+      {
+    vocab:  'Logical Operators',
+    definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
+  },  
 ]
 
 
