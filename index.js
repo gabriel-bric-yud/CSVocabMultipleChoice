@@ -807,7 +807,7 @@ let vocabArrayFinal = [
   },
   {
     vocab: 'Empty Input',
-    definition: 'When an input operation attempts to read data but ther is no data to read.'
+    definition: 'When an input operation attempts to read data but there is no data to read.'
   },
   {
     vocab: 'Arrays',
