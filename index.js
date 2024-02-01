@@ -7,6 +7,11 @@ const topContainer = document.querySelector('.topContainer')
 const possibleChoices = document.querySelectorAll('.multipleChoice');
 const resultDisplay = document.querySelector('#result');
 const pointsDisplay = document.querySelector('#points');
+const guessWord = document.querySelector('#guessWord')
+const guessDefinition = document.querySelector('#guessDefinition')
+const csit111Midterm = document.querySelector('#csit111Midterm')
+const csit111Final = document.querySelector('#csit111Final')
+const csit240Chapter1 = document.querySelector('#csit240Chapter1')
 
 
 let i;
@@ -112,7 +117,7 @@ function fadeOut(elem, speed, startPosition, endPosition, bool) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-let vocabArrayMidterm = [
+let csit111MidtermVocab = [
   {
     vocab: 'Program',
     definition: 'A set of instructions that a computer follows to perform a task.'
@@ -647,16 +652,7 @@ let vocabArrayMidterm = [
   }
 ]
 
-
-function checkPoints() {
-    if (newPoint == true) {
-        console.log(points)
-        pointsDisplay.innerText = points     
-    }
-}
-
-
-let vocabArrayFinal = [
+let csit111FinalVocab = [
   {
     vocab: 'Module',
     definition: 'A group of statements that exists within a program for the purpose of perfoming a specific task. Also known as "procedures", "subroutines", "subprograms", "methods" and "functions".'
@@ -929,7 +925,7 @@ let vocabArrayFinal = [
     vocab: 'Control Variable',
     definition: 'A special variable used in control break logic to start and end the processing.'
   },
- {
+  {
     vocab:  'Sequence Structure',
     definition: 'A set of statements that execute in the order that they appear.'
   },
@@ -973,31 +969,31 @@ let vocabArrayFinal = [
     vocab:  'Count-Controlled loop ',
     definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
   },
-    {
-        vocab: 'Program',
-        definition: 'A set of instructions that a computer follows to perform a task.'
-    },
-    {
-        vocab:  'American Standard Code for Information Interchange (ASCII)',
-        definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
-    },
-    {
-        vocab:  'Byte',
-        definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
-    },
-    {
-        vocab:  'Bit',
-        definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
-    },
-      {
+  {
+    vocab: 'Program',
+    definition: 'A set of instructions that a computer follows to perform a task.'
+  },
+  {
+    vocab:  'American Standard Code for Information Interchange (ASCII)',
+    definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
+  },
+  {
+    vocab:  'Byte',
+    definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
+  },
+  {
+    vocab:  'Bit',
+    definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
+  },
+  {
     vocab:  'Machine Language',
     definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
   },
-      {
+  {
     vocab:  'Assembly Language',
     definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
   },
-      {
+  {
     vocab:  'Compiler',
     definition: 'A program that translates a high-level language program into a separate machine language program.'
   },
@@ -1005,11 +1001,11 @@ let vocabArrayFinal = [
     vocab:  'Interpreter',
     definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
   },
-      {
+  {
     vocab:  'Assembler',
     definition: 'A special program used to translate an assembly language program to a machine language program.'
   },
-      {
+  {
     vocab:  'Low-level Language',
     definition: "A language that provides little or no abstraction from a computer's instruction set."
   },
@@ -1017,15 +1013,15 @@ let vocabArrayFinal = [
     vocab:  'High-level Language ',
     definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
   },
-      {
+  {
     vocab:  'Syntax Error',
     definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
   },
-      {
+  {
     vocab:  'Logic Error',
     definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
   },
-      {
+  {
     vocab:  'Boolean Expressions',
     definition: 'Expressions that can be evaluated as either true or false.'
   },
@@ -1033,55 +1029,229 @@ let vocabArrayFinal = [
     vocab:  'Relational Operator',
     definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
   },
-      {
+  {
     vocab:  'Logical Operators',
     definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
   },
-       {
+  {
     vocab:  'Oval',
     definition: 'Flowchart symbol for start and end of a program. Called Terminal symbols.'
   },
-   {
+  {
     vocab:  'Parallelogram',
     definition: 'Flowchart for displaying information or reading input. Called Input/Outou symbols.'
   },
-   {
+  {
     vocab:  'Rectangle',
     definition: 'Flowchart symbol for doing calculations and tasks. Called Processing symbols.'
   },
-   {
+  {
     vocab:  'Diamond',
     definition: 'Flowchart symbol for decision structure such as if/else, and some repetition structures such as while loop and conditioned control loops.'
   },
-   {
+  {
     vocab:  'Hexagon',
     definition: 'Flowchart symbol for some repetition structures such as count-controlled loops and for loops.'
   }
 ]
 
+let csit240Chapter1Vocab = [
+  {
+    vocab: 'Assembly Language',
+    definition: 'A low-level language that replaced binary digits with mnemonics.'
+  },
+  {
+    vocab: 'Bytecode',
+    definition: 'A low-level representation of a Java program that is not tied to a specific type of CPU.'
+  },
+  {
+    vocab: 'case-sensitive',
+    definition: 'Making a distinction between uppercase and lowercase letters. Java is case-sensitive'
+  },
+  {
+    vocab: 'class-definition',
+    definition: 'An element in Java program. All java programs are defined using class definitions.'
+  },
+  {
+    vocab: 'Class library',
+    definition: 'A set of software classes that can be used when developing programs. (see Java API)'
+  },
+  {
+    vocab: 'Comment',
+    definition: 'Text included in a program to make the program easier to understand for humans.'
+  },
+  {
+    vocab: 'Compiler',
+    definition: 'A program that translates code in one languase into equivalent code in another language.'
+  },
+  {
+    vocab: 'Deprecated',
+    definition: 'An element that is considered old-fashioned or outdated and should not be used'
+  },
+  {
+    vocab: 'Editor',
+    definition: 'A software tool that allows one to enter text such as a program.'
+  },
+  {
+    vocab: 'Encapsulation',
+    definition: 'The characteristic of an object that means it protects and manages its own information.'
+  },
+  {
+    vocab: 'Graphical User Interface (GUI)',
+    definition: 'An interface to a program that consistts of graphical elements such as windows and buttons.'
+  },
+  {
+    vocab: 'High-Level Language',
+    definition: 'A programming language that is expressed in phrasses that are easier than machine language for a programmer to understand.'
+  },
+  {
+    vocab: 'Indentifier',
+    definition: 'A word in a programming language'
+  },
+  {
+    vocab: 'Inheritance',
+    definition: 'Defining a class based on another that already exists.'
+  },
+  {
+    vocab: 'Integrated Development Enviroment',
+    definition: 'A set of software tools used to create, modify, and test a program.'
+  },
+  {
+    vocab: 'Java 2 Platform',
+    definition: 'The most recent Java technology'
+  },
+  {
+    vocab: 'Java API',
+    definition: 'A library of software that we can use when devoloping programs.'
+  },
+  {
+    vocab: 'Logical Error',
+    definition: 'An error in program that causes it to produce incorrect results.'
+  },
+  {
+    vocab: 'Machine Language',
+    definition: 'The language executed by a particular CPU.'
+  },
+  {
+    vocab: 'Method',
+    definition: 'A group of programming statements that is given a name.'
+  },
+  {
+    vocab: 'Method Invocation',
+    definition: 'Calling a method to execute its code.'
+  },
+  {
+    vocab: 'Natural Language',
+    definition: 'A language that humans use to communicate, such as English.'
+  },
+  {
+    vocab: 'Object',
+    definition: 'A fundamental entity in a Java program that represents something and provides services related to it.'
+  },
+  {
+    vocab: 'Object-Oriented Programming Language',
+    definition: 'A language such as Java that uses objects as the fundamental elements one at a time.'
+  },
+  {
+    vocab: 'Program',
+    definition: 'A series of instructions that a computer executes one at a time.'
+  },
+  {
+    vocab: 'Programming Statement',
+    definition: 'An individual instruction in a programming language.'
+  },
+  {
+    vocab: 'Reserved Word',
+    definition: 'An indentifier that has a special meaning in a program language and can be used only in predifined ways.'
+  },
+  {
+    vocab: 'Runtime Error',
+    definition: 'An error that occurs during program execution and causes the program to terminate abnormally.'
+  },
+  {
+    vocab: 'Semantics',
+    definition: 'Rules that deine what a statment in a language means.'
+  },
+  {
+    vocab: 'Java 2 Platform',
+    definition: 'The most recent Java technology'
+  },
+  {
+    vocab: 'Syntax',
+    definition: 'The rules of a language that dictate how vocabulary elements of the language can be used.'
+  },
+  {
+    vocab: 'Syntax Error',
+    definition: 'A programming error that violates the syntax rules of the language'
+  },
+  {
+    vocab: 'White Space',
+    definition: 'The space, tab, and newline characters used to seperate words in a program.'
+  },
+]
+
+function checkPoints() {
+  if (newPoint == true) {
+      console.log(points)
+      pointsDisplay.innerText = points     
+  }
+}
+
+
+let currentVocabArray = csit240Chapter1Vocab
+
+function getArray() {
+  if (csit111Final.checked) {
+    currentVocabArray = csit111FinalVocab
+  }
+  else if (csit111Midterm.checked) {
+    currentVocabArray = csit111MidtermVocab
+  }
+  else if (csit240Chapter1.checked) {
+    currentVocabArray = csit240Chapter1Vocab
+  }
+}
+
+
 
 function createQuestion() {
-    document.querySelector("#choiceA").textContent = document.querySelector("#choiceB").textContent = document.querySelector("#choiceC").textContent = "";
-    i = Math.floor(Math.random() * vocabArrayFinal.length);
-    console.log(i)
-    newQuestion = vocabArrayFinal[i].definition
-    newAnswer = vocabArrayFinal[i].vocab
-    position = Math.floor(Math.random() * 4) + 1
-    document.querySelector("#question").textContent = newQuestion
-    console.log(document.querySelector("#question").textContent)
-    addChoice(position, newAnswer)
-
-    for (let x = 1; x <= 4; x++) {
-        if (x != position) {
-            let randomAnswer =  Math.floor(Math.random() * vocabArrayFinal.length)
-            while (vocabArrayFinal[randomAnswer].vocab == newAnswer || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceA").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceB").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceC").textContent || vocabArrayFinal[randomAnswer].vocab == document.querySelector("#choiceD").textContent) {
-              randomAnswer =  Math.floor(Math.random() * vocabArrayFinal.length)
-            }
-            console.log(vocabArrayFinal[randomAnswer].vocab)
-            addChoice(x, vocabArrayFinal[randomAnswer].vocab)
+  console.log(currentVocabArray)
+  getArray()
+  document.querySelector("#choiceA").textContent = document.querySelector("#choiceB").textContent = document.querySelector("#choiceC").textContent = "";
+  i = Math.floor(Math.random() * currentVocabArray.length);
+  console.log(i)
+  if (guessWord.checked) {
+    newQuestion = currentVocabArray[i].definition
+    newAnswer = currentVocabArray[i].vocab
+  }
+  else {
+    newQuestion = currentVocabArray[i].vocab
+    newAnswer = currentVocabArray[i].definition
+  }
+  position = Math.floor(Math.random() * 4) + 1
+  document.querySelector("#question").textContent = newQuestion
+  console.log(document.querySelector("#question").textContent)
+  addChoice(position, newAnswer)
+  for (let x = 1; x <= 4; x++) {
+    if (x != position) {
+      if (guessWord.checked) {
+        let randomAnswer =  Math.floor(Math.random() * currentVocabArray.length)
+        while (currentVocabArray[randomAnswer].vocab == newAnswer || currentVocabArray[randomAnswer].vocab == document.querySelector("#choiceA").textContent || currentVocabArray[randomAnswer].vocab == document.querySelector("#choiceB").textContent || currentVocabArray[randomAnswer].vocab == document.querySelector("#choiceC").textContent || currentVocabArray[randomAnswer].vocab == document.querySelector("#choiceD").textContent) {
+          randomAnswer =  Math.floor(Math.random() * currentVocabArray.length)
         }
+        console.log(currentVocabArray[randomAnswer].vocab)
+        addChoice(x, currentVocabArray[randomAnswer].vocab)
+      }
+      else {
+        let randomAnswer =  Math.floor(Math.random() * currentVocabArray.length)
+        while (currentVocabArray[randomAnswer].definition == newAnswer || currentVocabArray[randomAnswer].definition == document.querySelector("#choiceA").textContent || currentVocabArray[randomAnswer].definition == document.querySelector("#choiceB").textContent || currentVocabArray[randomAnswer].definition == document.querySelector("#choiceC").textContent || currentVocabArray[randomAnswer].definition == document.querySelector("#choiceD").textContent) {
+          randomAnswer =  Math.floor(Math.random() * currentVocabArray.length)
+        }
+        console.log(currentVocabArray[randomAnswer].definition)
+        addChoice(x, currentVocabArray[randomAnswer].definition)
+      }
     }
-
+  }
 }
 
 function addChoice(position, choice) {
