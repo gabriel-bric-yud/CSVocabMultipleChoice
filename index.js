@@ -1102,7 +1102,7 @@ let csit240Chapter1Vocab = [
   },
   {
     vocab: 'High-Level Language',
-    definition: 'A programming language that is expressed in phrasses that are easier than machine language for a programmer to understand.'
+    definition: 'A programming language that is expressed in phrases that are easier than machine language for a programmer to understand.'
   },
   {
     vocab: 'Indentifier',
