@@ -1098,7 +1098,7 @@ let csit240Chapter1Vocab = [
   },
   {
     vocab: 'Graphical User Interface (GUI)',
-    definition: 'An interface to a program that consistts of graphical elements such as windows and buttons.'
+    definition: 'An interface to a program that consists of graphical elements such as windows and buttons.'
   },
   {
     vocab: 'High-Level Language',
