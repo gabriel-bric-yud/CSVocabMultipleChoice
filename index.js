@@ -12,6 +12,7 @@ const guessDefinition = document.querySelector('#guessDefinition')
 const csit111Midterm = document.querySelector('#csit111Midterm')
 const csit111Final = document.querySelector('#csit111Final')
 const csit240Chapter1 = document.querySelector('#csit240Chapter1')
+const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 
 
 let i;
@@ -49,6 +50,9 @@ function clearResult() {
 
 function notification(msg, parent, colorData, speed) {
     console.log('hello')
+    document.querySelectorAll('.message').forEach(message => {
+      message.remove();
+    })
     const messageDiv = document.createElement('div')
     messageDiv.classList.add('message')
     messageDiv.style.opacity = 0
@@ -115,6 +119,12 @@ function fadeOut(elem, speed, startPosition, endPosition, bool) {
   
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function checkPoints() {
+  if (newPoint == true) {
+      console.log(points)
+      pointsDisplay.innerText = points     
+  }
+}
 
 
 let csit111MidtermVocab = [
@@ -1055,7 +1065,7 @@ let csit111FinalVocab = [
   }
 ]
 
-let csit240Chapter1Vocab = [
+let csit240Ch1Vocab = [
   {
     vocab: 'Assembly Language',
     definition: 'A low-level language that replaced binary digits with mnemonics.'
@@ -1065,11 +1075,11 @@ let csit240Chapter1Vocab = [
     definition: 'A low-level representation of a Java program that is not tied to a specific type of CPU.'
   },
   {
-    vocab: 'case-sensitive',
+    vocab: 'Case-sensitive',
     definition: 'Making a distinction between uppercase and lowercase letters. Java is case-sensitive'
   },
   {
-    vocab: 'class-definition',
+    vocab: 'Class-definition',
     definition: 'An element in Java program. All java programs are defined using class definitions.'
   },
   {
@@ -1190,15 +1200,389 @@ let csit240Chapter1Vocab = [
   },
 ]
 
-function checkPoints() {
-  if (newPoint == true) {
-      console.log(points)
-      pointsDisplay.innerText = points     
+let csit240Ch2Vocab = [
+  {
+    vocab: 'ASCII character set',
+    definition: 'An early character set for representing English characters and symbols.'
+  },
+  {
+    vocab: 'Assignment Operator',
+    definition: 'An operator in Java that combines a basic operation such as addition with assignment.'
+  },
+  {
+    vocab: 'Assignment Statement',
+    definition: 'A programming statement that assigns a value to a variable.'
+  },
+  {
+    vocab: 'Casting',
+    definition: 'A data conversion in which the type to which a value is converted is explicitly specified in parentheses.'
+  },
+  {
+    vocab: 'Character Set',
+    definition: 'A list of characters in a particular order.'
+  },
+  {
+    vocab: 'Delimiter',
+    definition: 'Characters used to sperate one input token from another.'
+  },
+  {
+    vocab: 'Escape Sequence',
+    definition: 'A series of characters that begin with a backlash (\\), used to represent a character.'
+  },
+  {
+    vocab: 'Expression',
+    definition: 'A combination of one or more operators and operands.'
+  },
+  {
+    vocab: 'Interger Division',
+    definition: 'Division in which the fractional portion of the result is discarded, ued when both operands are intergers.'
+  },
+  {
+    vocab: 'Literal',
+    definition: 'An explicit data calue used in a program.'
+  },
+  {
+    vocab: 'Narrowing Conversion',
+    definition: 'A conversion between one data type and another in which operators are evaluated.'
+  },
+  {
+    vocab: 'Parameters',
+    definition: 'A piece of data that is sent to a method when it is invoked.'
+  },
+  {
+    vocab: 'Primitive Data Type',
+    definition: 'A basic type of data, such as a number, character or boolean.'
+  },
+  {
+    vocab: 'Standard Input Stream',
+    definition: 'A source pf input, usually the keyboard.'
+  },
+  {
+    vocab: 'String Concatenation',
+    definition: 'Appending one character string to the end of another.'
+  },
+  {
+    vocab: 'String Literal',
+    definition: 'Text enclosed by double quotation marks that represent a character string.'
+  },
+  {
+    vocab: 'Strongly Typed',
+    definition: 'A programming language characteristic that jprevents a variable from being assigned a value inconsistent with its type.'
+  },
+  {
+    vocab: 'Token',
+    definition: 'An element in an input stream.'
+  },
+  {
+    vocab: 'Unicode charactter set',
+    definition: 'A character set used to represent characters and symbols from most of the worlds written languages.'
+  },
+  {
+    vocab: 'Variable',
+    definition: 'A name for a location in memory used to hold a data value.'
+  },
+  {
+    vocab: 'Widening Conversion',
+    definition: 'A conversion between one data type and another in which information is not lost.'
   }
-}
+]
 
+let csit241Ch1Vocab = [
+  {
+    vocab: 'Agile Methods',
+    definition: 'Systems development method that attempt to develop a system incrementally by building a series of prototypes and constantly adjusting them to user requirements. Also called adaptive methods.'
+  },
+  {
+    vocab: 'App',
+    definition: 'A software application that runs on a mobile device, such as a smartphone or tablet.'
+  },
+  {
+    vocab: 'Application Lifecycle Management (ALM)',
+    definition: "Activities that cover the entire SDLC, including requirements, design, development, testing, and deployment and management of software applications."
+  },
+  {
+    vocab: 'Application Software',
+    definition: 'Software programs, such as email, word processors, spreadsheets, and graphics packages, used by employees in typical office scenarios.'
+  },
+  {
+    vocab: 'Artificial Intelligence',
+    definition: 'The attempt to recreate natural intelligence through software in machines.'
+  },
+  {
+    vocab: 'B2B (business-to-business)',
+    definition: 'A commercial exchange (e.g., products or services) between businesses, typically enabled by the Internet or electronic means.'
+  },
+  {
+    vocab: 'B2C (business-to-consumer)',
+    definition: 'A commercial exchange (e.g., products or services) between businesses and consumers conducted over the Internet.'
+  },
+  {
+    vocab: 'bring your own device (BYOD)',
+    definition: 'An equipment management model where employees are in charge of their devices'
+  },  {
+    vocab: 'Business Model',
+    definition: 'A graphical representation of business functions that consist of business processes, such as sales, accounting, and purchasing.'
+  },  {
+    vocab: 'Business Process',
+    definition: 'A description of specific events, tasks, and desired results.'
+  },  {
+    vocab: 'Business Process Model (BPM)',
+    definition: 'A graphical representation of one or more business processes.'
+  },  {
+    vocab: 'Business Profile',
+    definition: 'A definition of a companys overall functions, processes, organization, products, services, customers, suppliers, competitors, constraints, and future direction.'
+  },  {
+    vocab: 'Business Rules',
+    definition: 'How a system handles data and produces useful information. Also called business logic, reflect the operational requirements of the business.'
+  },  {
+    vocab: 'Business Support Systems',
+    definition: 'Provide job-related information support to users at all levels of a company.'
+  },  {
+    vocab: 'CASE tools',
+    definition: 'Powerful software used in computer-aided systems engineering (CASE) to help systems analysts develop and maintain information systems.'
+  },  {
+    vocab: 'Certification',
+    definition: 'A credential an individual earns by demonstrating a certain level of knowledge and skill on a standardized test.'
+  },  {
+    vocab: 'Class',
+    definition: 'A term used in object-oriented modeling to indicate a collection of similar objects.'
+  },  {
+    vocab: 'Computer-aided Software Engineering',
+    definition: 'A technique that uses powerful programs called CASE tools to provide an overall framework for systems development.'
+  },  {
+    vocab: 'Corporate Culture',
+    definition: 'A set of beliefs, rules, traditions, values, and attitudes that define a company and influence its way of doing business.'
+  },  {
+    vocab: 'Critical Thinking Skills',
+    definition: 'The ability to compare, classify, evaluate, recognize patterns, analyze cause and effect, and apply logic.'
+  },  {
+    vocab: 'Data',
+    definition: 'The raw material or basic facts used by information systems.'
+  },  {
+    vocab: 'Data Center',
+    definition: 'A large concentration of networked computers working together.'
+  },  {
+    vocab: 'Data Flow Diagram (DFD)',
+    definition: 'Graphical representation of the system, showing it stores, processes, and transforms data into useful information.'
+  },  {
+    vocab: 'Data Science',
+    definition: 'Interdisciplinary field that blends computer science, math and statistics, and business methods to analyze large datasets. Involves artificial intelligence, machine learning and predictive analytics, and visualization techniques.'
+  },  {
+    vocab: 'Deliverable',
+    definition: 'A polished, final product, suitable for its intended use.'
+  },  {
+    vocab: 'E-Commerce (Electronic Commerce)',
+    definition: 'Transactions that occur on the Internet.'
+  },  {
+    vocab: 'Electronic Data Interchange (EDI)',
+    definition: 'The exchange of business documents between computers using a standard electronic format.'
+  },  {
+    vocab: 'Empowerment',
+    definition: 'A business practice that places more responsibility and accountability throughout all levels of an organization.'
+  },  {
+    vocab: 'Enterprise Applications',
+    definition: 'Company-wide applications, such as order processing systems, payroll systems, and company communications networks.'
+  },  {
+    vocab: 'Enterprise Computing',
+    definition: 'Information systems that support company-wide data management requirements, such as airline reservations or credit card billing systems.'
+  },  {
+    vocab: 'Enterprise Resource Planning (ERP)',
+    definition: 'A process that establishes an enterprise-wide strategy for IT resources including standards for data, processing, network, and user interface design.'
+  },  {
+    vocab: 'Feasibility Study',
+    definition: 'An initial investigation to clearly identify the nature and scope of the business opportunity or problem. Also called preliminary investigation.'
+  },  {
+    vocab: 'Groupware',
+    definition: 'Programs that run on a network that enable users to share data, collaborate on projects, and work in teams. Also called workgroup software.'
+  },  {
+    vocab: 'Hardware',
+    definition: 'The physical layer of the information system, to include computers, networks, communications equipment, and other technology-based infrastructure.'
+  },  
+  {
+    vocab: 'Help Desk',
+    definition: 'A centralized resource staffed by IT professionals that provides users with the support they need to do their jobs. '
+  },
+  {
+    vocab: 'Horizontal System',
+    definition: 'A basic system, such as an inventory or payroll package, that is commonly used by a variety of companies.'
+  },
+  {
+    vocab: 'Inference Rules',
+    definition: 'Instructions that direct a knowledge management system to identify data patterns and relationships.'
+  },
+  {
+    vocab: 'Information',
+    definition: 'Data that has been changed into a useful form of output.'
+  },
+  {
+    vocab: 'knowledge base',
+    definition: 'A centralized repository for storing, organizing, and managing information, including data, documentation, and user guides, to support the systems development, maintenance, and use.'
+  },
+  {
+    vocab: "legacy systems",
+    definition: "An older system that is typically less technologically advanced than currently available systems."
+  },
+  {
+    vocab: "machine learning",
+    definition: "An application of computer science that uses automated approaches to pattern recognition and predictive analytics based on large datasets."
+  },
+  {
+    vocab: "management information systems (MIS)",
+    definition: "A computer-based information system used in business planning, control, decision making, and problem solving."
+  },
+  {
+    vocab: "mission-critical system",
+    definition: "An information system that is vital to a companys operations."
+  },
+  {
+    vocab: "modeling",
+    definition: "A process that produces a graphical representation of a concept or process that systems developers can analyze, test, and modify."
+  },
+  {
+    vocab: "Moores law",
+    definition: "A prediction that computing power would double every 18 to 24 months due to increased miniaturization of electronic components."
+  },
+  {
+    vocab: "NoSQL databases",
+    definition: "Database systems that use a flat, nontabular (nonrelational) structure to store and process large-scale datasets."
+  },
+  {
+    vocab: "object-oriented (O-O) analysis",
+    definition: "The act of understanding an information system by identifying things called objects. A popular approach that sees a system from the viewpoint of the objects themselves as they function and interact with the system."
+  },
+  {
+    vocab: "personal digital assistant",
+    definition: "A program that responds to user requests through a natural interface, such as regular speech."
+  },
+  {
+    vocab: "preliminary investigation",
+    definition: "An initial analysis to clearly identify the nature and scope of the business opportunity or problem. Also called a feasibility study."
+  },
+  {
+    vocab: "product-oriented",
+    definition: "Companies that manufacture computers, routers, or microchips."
+  },
+  {
+    vocab: "properties",
+    definition: "In object-oriented (O-O) analysis, characteristics that objects inherit from their class or possess on their own."
+  },
+  {
+    vocab: "prototype",
+    definition: "An early, rapidly constructed working version of the proposed information system."
+  },
+  {
+    vocab: "radio frequency identification (RFID)",
+    definition: "Technology that uses high-frequency radio waves to track physical objects."
+  },
+  {
+    vocab: "requirements engineering",
+    definition: "Used in the systems planning phase of the SDLC. It involves using various fact-finding techniques, such as interviews, surveys, observation, and sampling, to describe the current system and identify the requirements for the new system."
+  },
+  {
+    vocab: "scalable",
+    definition: "The ability of a system to expand to meet new business requirements and volumes."
+  },
+  {
+    vocab: "service-oriented",
+    definition: "A company that primarily offers information or services or sells goods produced by others"
+  },
+  {
+    vocab: "software",
+    definition: "A program run by computers for a specific function or task."
+  },
+  {
+    vocab: "spiral model",
+    definition: "A development model with a series of iterations, or revisions, based on user feedback."
+  },
+  {
+    vocab: "stakeholders",
+    definition: "Anyone who is affected by the companys performance, such as customers, employees, suppliers, stockholders, and members of the community."
+  },
+  {
+    vocab: "strategic plans",
+    definition: "The long-range plans that define the corporate mission and goals. Typically defined by top management, with input from all levels."
+  },
+  {
+    vocab: "structured analysis",
+    definition: "A traditional systems development technique that uses phases to plan, analyze, design, implement, and support an information system. Processes and data are treated as separate components."
+  },
+  {
+    vocab: "supply chain management",
+    definition: "The coordination, integration, and management of materials, information, and finances as they move from suppliers to customers, both within and between companies."
+  },
+  {
+    vocab: "system",
+    definition: "A set of related components that produces specific results."
+  },
+  {
+    vocab: "system design specification",
+    definition: "A document that presents the complete design for the new information system, along with detailed costs, staffing, and scheduling. Also called the technical design specification or the detailed design specification."
+  },
+  {
+    vocab: "system requirements document",
+    definition: "A document that contains the requirements for the new system, describes the alternatives that were considered, and makes a specific recommendation to management."
+  },
+  {
+    vocab: "system software",
+    definition: "Programs that control the computer, including the operating system, device drivers that communicate with hardware, and low-level utilities."
+  },
+  {
+    vocab: "systems analysis and design",
+    definition: "The process of developing information systems that effectively use hardware, software, data, processes, and people to support the companys business objectives."
+  },
+  {
+    vocab: "systems analysis phase",
+    definition: "The second SDLC phase. The purpose of this phase is to build a logical model of the new system."
+  },
+  {
+    vocab: "systems design phase",
+    definition: "To create a blueprint for the new system that will satisfy all documented requirements, whether the system is being developed in-house or purchased as a package."
+  },
+  {
+    vocab: "Systems Development Life Cycle (SDLC)",
+    definition: "Activities and functions that systems developers typically perform, regardless of how those activities and functions fit into a particular methodology. model includes five phases: (1) systems planning, (2) systems analysis, (3) systems design, (4) systems implementation, and (5) systems support and security. "
+  },
+  {
+    vocab: "systems implementation phase",
+    definition: "The fourth phase of the SDLC. During this phase, the new system is constructed—programs are written, tested, and documented, and the system is installed."
+  },
+  {
+    vocab: "systems planning phase",
+    definition: "The first phase of the SDLC. During this phase, the systems project gets started. The project proposal is evaluated to determine its feasibility. The project management plan is formulated."
+  },
+  {
+    vocab: "systems request",
+    definition: "A formal appeal to the IT department that describes problems or desired changes in an information system or business process."
+  },
+  {
+    vocab: "technical support",
+    definition: "Necessary to support the wide variety of IT systems and users. It includes six main functions: application development, systems support, user support, database administration, network administration, and web support."
+  },
+  {
+    vocab: "transaction processing (TP) systems",
+    definition: "Operational systems used to process day-to-day recurring business transactions, such as customer billing."
+  },
+  {
+    vocab: "user productivity systems",
+    definition: "Applications that provide employees of all levels a wide array of tools to improve job performance. Examples include email, word processing, graphics, and company intranets."
+  },
+  {
+    vocab: "users",
+    definition: "Stakeholders inside and outside the company who will interact with the system."
+  },
+  {
+    vocab: "vertical system",
+    definition: "A system designed to meet the unique requirements of a specific business or industry, such as a web-based retailer or auto-supply store."
+  },
+  {
+    vocab: "waterfall model",
+    definition: "The traditional model of software development. A graph that depicts the result of each SDLC phase flowing down into the next phase."
+  }
+]
 
-let currentVocabArray = csit240Chapter1Vocab
+csit240Chapter1.checked = true
+let currentVocabArray = csit240Ch1Vocab
+
 
 function getArray() {
   if (csit111Final.checked) {
@@ -1208,13 +1592,22 @@ function getArray() {
     currentVocabArray = csit111MidtermVocab
   }
   else if (csit240Chapter1.checked) {
-    currentVocabArray = csit240Chapter1Vocab
+    currentVocabArray = csit240Ch1Vocab
+  }
+  else if (csit240Chapter2.checked) {
+    currentVocabArray = csit240Ch2Vocab
+  }
+  else if (csit241Chapter1.checked) {
+    currentVocabArray = csit241Ch1Vocab
   }
 }
 
 
 
 function createQuestion() {
+  document.querySelectorAll('.message').forEach(message => {
+    message.remove();
+  })
   console.log(currentVocabArray)
   getArray()
   document.querySelector("#choiceA").textContent = document.querySelector("#choiceB").textContent = document.querySelector("#choiceC").textContent = "";
