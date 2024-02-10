@@ -1235,7 +1235,7 @@ let csit240Ch2Vocab = [
   },
   {
     vocab: 'Interger Division',
-    definition: 'Division in which the fractional portion of the result is discarded, ued when both operands are intergers.'
+    definition: 'Division in which the fractional portion of the result is discarded, used when both operands are intergers.'
   },
   {
     vocab: 'Literal',
