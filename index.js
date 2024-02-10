@@ -1255,7 +1255,7 @@ let csit240Ch2Vocab = [
   },
   {
     vocab: 'Standard Input Stream',
-    definition: 'A source pf input, usually the keyboard.'
+    definition: 'A source of input, usually the keyboard.'
   },
   {
     vocab: 'String Concatenation',
