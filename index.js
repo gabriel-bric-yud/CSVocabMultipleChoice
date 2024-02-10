@@ -1239,7 +1239,7 @@ let csit240Ch2Vocab = [
   },
   {
     vocab: 'Literal',
-    definition: 'An explicit data calue used in a program.'
+    definition: 'An explicit data value used in a program.'
   },
   {
     vocab: 'Narrowing Conversion',
