@@ -1274,7 +1274,7 @@ let csit240Ch2Vocab = [
     definition: 'An element in an input stream.'
   },
   {
-    vocab: 'Unicode charactter set',
+    vocab: 'Unicode character set',
     definition: 'A character set used to represent characters and symbols from most of the worlds written languages.'
   },
   {
