@@ -12,6 +12,8 @@ const guessDefinition = document.querySelector('#guessDefinition')
 const csit111Midterm = document.querySelector('#csit111Midterm')
 const csit111Final = document.querySelector('#csit111Final')
 const csit240Chapter1 = document.querySelector('#csit240Chapter1')
+const csit240Chapter2 = document.querySelector('#csit240Chapter2')
+const csit240Chapter3 = document.querySelector('#csit240Chapter3')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 
 
@@ -1580,6 +1582,61 @@ let csit241Ch1Vocab = [
   }
 ]
 
+let csit240Ch3Vocab = [
+  {
+    vocab: 'Application Programming Inteface (API)',
+    definition: 'A set of related classes that supports a particular aspect of programming.'
+  },
+  {
+    vocab: 'Autoboxing',
+    definition: 'The automatic conversion of a primitive type to an object of its corresponding wrapper class.'
+  },
+  {
+    vocab: 'Class Library',
+    definition: 'A set of classes that supports the development of programs.'
+  },
+  {
+    vocab: 'Constructor',
+    definition: 'A special method that has the same name as the class and is called when an object is created to set up the object initially.'
+  },
+  {
+    vocab: 'Enumerated Type',
+    definition: 'A Java data type in which all values of the type are explicitly listed.'
+  },
+  {
+    vocab: 'Garbage Collection',
+    definition: 'The process of reclaiming memory space that can no longer benused by a program.'
+  },
+  {
+    vocab: 'Immutable',
+    definition: 'An object whose data (state) cannot be modified once it is created.'
+  },
+  {
+    vocab: 'Import declaration',
+    definition: 'A programming statement used to specify which external classes (from which packages) are used in a program.'
+  },
+  {
+    vocab: 'Instance',
+    definition: 'An object. An object is an instance of a class.'
+  },
+  {
+    vocab: 'New Operator',
+    definition: 'Returns a reference to a newly created object.'
+  },
+  {
+    vocab: 'Package',
+    definition: 'A language-level organization mechanism for classes. Each class in the Java API belongs to a particular package.'
+  },
+  {
+    vocab: 'Pseudorandom Number Generator',
+    definition: 'A program element that performs calculations to produce a series of numbers in seemingly random order.'
+  },
+  {
+    vocab: 'Wrapper Class',
+    definition: 'A class that corresponds to a particulat primitive data type.'
+  }
+]
+
 csit240Chapter1.checked = true
 let currentVocabArray = csit240Ch1Vocab
 
@@ -1596,6 +1653,9 @@ function getArray() {
   }
   else if (csit240Chapter2.checked) {
     currentVocabArray = csit240Ch2Vocab
+  }
+  else if (csit240Chapter3.checked) {
+    currentVocabArray = csit240Ch3Vocab
   }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
