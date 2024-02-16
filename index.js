@@ -15,6 +15,7 @@ const csit240Chapter1 = document.querySelector('#csit240Chapter1')
 const csit240Chapter2 = document.querySelector('#csit240Chapter2')
 const csit240Chapter3 = document.querySelector('#csit240Chapter3')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
+const csit241Chapter2 = document.querySelector('#csit241Chapter2')
 
 
 let i;
@@ -1288,6 +1289,60 @@ let csit240Ch2Vocab = [
     definition: 'A conversion between one data type and another in which information is not lost.'
   }
 ]
+let csit240Ch3Vocab = [
+  {
+    vocab: 'Application Programming Inteface (API)',
+    definition: 'A set of related classes that supports a particular aspect of programming.'
+  },
+  {
+    vocab: 'Autoboxing',
+    definition: 'The automatic conversion of a primitive type to an object of its corresponding wrapper class.'
+  },
+  {
+    vocab: 'Class Library',
+    definition: 'A set of classes that supports the development of programs.'
+  },
+  {
+    vocab: 'Constructor',
+    definition: 'A special method that has the same name as the class and is called when an object is created to set up the object initially.'
+  },
+  {
+    vocab: 'Enumerated Type',
+    definition: 'A Java data type in which all values of the type are explicitly listed.'
+  },
+  {
+    vocab: 'Garbage Collection',
+    definition: 'The process of reclaiming memory space that can no longer benused by a program.'
+  },
+  {
+    vocab: 'Immutable',
+    definition: 'An object whose data (state) cannot be modified once it is created.'
+  },
+  {
+    vocab: 'Import declaration',
+    definition: 'A programming statement used to specify which external classes (from which packages) are used in a program.'
+  },
+  {
+    vocab: 'Instance',
+    definition: 'An object. An object is an instance of a class.'
+  },
+  {
+    vocab: 'New Operator',
+    definition: 'Returns a reference to a newly created object.'
+  },
+  {
+    vocab: 'Package',
+    definition: 'A language-level organization mechanism for classes. Each class in the Java API belongs to a particular package.'
+  },
+  {
+    vocab: 'Pseudorandom Number Generator',
+    definition: 'A program element that performs calculations to produce a series of numbers in seemingly random order.'
+  },
+  {
+    vocab: 'Wrapper Class',
+    definition: 'A class that corresponds to a particulat primitive data type.'
+  }
+]
 
 let csit241Ch1Vocab = [
   {
@@ -1582,58 +1637,142 @@ let csit241Ch1Vocab = [
   }
 ]
 
-let csit240Ch3Vocab = [
+let csit241Ch2Vocab = [
   {
-    vocab: 'Application Programming Inteface (API)',
-    definition: 'A set of related classes that supports a particular aspect of programming.'
+    vocab: 'Biometric Devices',
+    definition: 'A mechanism used to uniquely identify a person by a retina scan or by mapping a facial pattern.'
   },
   {
-    vocab: 'Autoboxing',
-    definition: 'The automatic conversion of a primitive type to an object of its corresponding wrapper class.'
+    vocab: 'Blockchain',
+    definition: 'A distributed ledger system. The technology underlying Bitcoin.'
   },
   {
-    vocab: 'Class Library',
-    definition: 'A set of classes that supports the development of programs.'
+    vocab: 'Business Case',
+    definition: 'Refers to the reasons, or justification, for a proposal.'
   },
   {
-    vocab: 'Constructor',
-    definition: 'A special method that has the same name as the class and is called when an object is created to set up the object initially.'
+    vocab: 'Case for Action',
+    definition: 'A part of the preliminary investigation report to management that summarizes project requests and makes specific recommendations.'
   },
   {
-    vocab: 'Enumerated Type',
-    definition: 'A Java data type in which all values of the type are explicitly listed.'
+    vocab: 'Computer Resources Committee',
+    definition: 'A group of key managers and users responsible for evaluating systems requests. The term "systems reciew committe" is also used.'
   },
   {
-    vocab: 'Garbage Collection',
-    definition: 'The process of reclaiming memory space that can no longer benused by a program.'
+    vocab: 'Constraint',
+    definition: 'A requirement or a condition that the system must satisfy or an outcome that the system must achieve.'
   },
   {
-    vocab: 'Immutable',
-    definition: 'An object whose data (state) cannot be modified once it is created.'
+    vocab: 'Critical Success Factor',
+    definition: 'Vital objectives that must be achieved for the enterprise to fulfill its mission.'
   },
   {
-    vocab: 'Import declaration',
-    definition: 'A programming statement used to specify which external classes (from which packages) are used in a program.'
+    vocab: 'Customer Relationship Management (CRM)',
+    definition: 'Many companies implement systems to integrate all customer- related events and transactions including marketing, sales, and customer service activities.'
   },
   {
-    vocab: 'Instance',
-    definition: 'An object. An object is an instance of a class.'
+    vocab: 'Discretionary Projects',
+    definition: 'Where management has a choice in implementing a project.'
   },
   {
-    vocab: 'New Operator',
-    definition: 'Returns a reference to a newly created object.'
+    vocab: 'Economic Feasibility',
+    definition: 'Achieved if the projected benefits of a proposed system outweigh the estimated costs involved in acquiring, installing and operating it.'
   },
   {
-    vocab: 'Package',
-    definition: 'A language-level organization mechanism for classes. Each class in the Java API belongs to a particular package.'
+    vocab: 'Electronic Product Code (EPC)',
+    definition: 'Technology that uses RFID tags to monitor their movement from factory to sales floor.'
   },
   {
-    vocab: 'Pseudorandom Number Generator',
-    definition: 'A program element that performs calculations to produce a series of numbers in seemingly random order.'
+    vocab: 'Electronic Proof of Delivery (EPOD)',
+    definition: 'A supplier uses RFID tags on each shipping unit to creating a digital shipping list to verify receipt of goods.'
   },
   {
-    vocab: 'Wrapper Class',
-    definition: 'A class that corresponds to a particulat primitive data type.'
+    vocab: 'Encryption',
+    definition: 'A process where data is coded(converted into unreadable characters) so that only those with authorization can access it.'
+  },
+  {
+    vocab: 'Fishbone Diagram',
+    definition: 'An analysis tool that represents the possible causes of a problem as a grapgical outline with arrows.'
+  },
+  {
+    vocab: 'Intangible Benefits',
+    definition: 'Positive outcomes that are difficult to measure in dollars.'
+  },
+  {
+    vocab: 'Intangible Costs',
+    definition: 'Items that are difficult to measure in dollar terms.'
+  },
+  {
+    vocab: 'Internet-of-Things (IOT)',
+    definition: 'Devices connected over a computer network.'
+  },
+  {
+    vocab: 'Just-in-time (JIT)',
+    definition: 'The exchange or deliver of information when and where it is needed.'
+  },
+  {
+    vocab: 'Mission Statement',
+    definition: 'Describes the company for its stakeholders and briefly states the companies overall purpose, products, services and values.'
+  },
+  {
+    vocab: 'Nondiscretionary Projects',
+    definition: 'Where management has no choice in implementing a project.'
+  },
+  {
+    vocab: 'Operational Feasibility',
+    definition: 'A system that will be used effectively after it has been developed.'
+  },
+  {
+    vocab: 'Pareto Chart',
+    definition: 'A vertical bar graph. The bars, which represents causes of a problem, are arranged in decending order, so the team can focus on the most important causes.'
+  },
+  {
+    vocab: 'Project Creep',
+    definition: 'The process by which projects with very general scope definitions expand gradually, without specific authorization.'
+  },
+  {
+    vocab: 'Project Scope',
+    definition: 'A specific determination of a projects boundaries or extent.'
+  },
+  {
+    vocab: 'Scatter Diagram',
+    definition: 'A tool used by systems analysts to graphically show the correlation between two variables. Also called an XY chart.'
+  },
+  {
+    vocab: 'Schedule Feasibility',
+    definition: 'If a project can be implemented in an acceptable time frame.'
+  },
+  {
+    vocab: 'Strategic Planning',
+    definition: 'The process of identifying long-term goals, strategies and resources.'
+  },
+  {
+    vocab: 'SWOT Analysis',
+    definition: 'An examination of four main factors: Strengths, Weaknesses, Opportunities, and Threats.'
+  },
+  {
+    vocab: 'Systems Review Committee',
+    definition: 'A group of key managers and users responsible for evaluating systems requests.'
+  },
+  {
+    vocab: 'Tangible Benefits',
+    definition: 'Positive outcomes that can be measured in dollars. They can result from a decrease in expenses, an increase in revenues, or both.'
+  },
+  {
+    vocab: 'Tangible Costs',
+    definition: 'Expanses that have a specific dollar value.'
+  },
+  {
+    vocab: 'Technical Feasibility',
+    definition: 'When an organization has the resources to develop or purchase, install and operate the system.'
+  },
+  {
+    vocab: 'Total cost of ownership (TCO)',
+    definition: 'A number used in assessing costs, which includes ongoing support and maintenance costs, as well as acquisition costs.'
+  },
+  {
+    vocab: 'XY Charts',
+    definition: 'A tool used by system analysts to graphically show the correlation between two variables. Also called a scatter diagram.'
   }
 ]
 
@@ -1659,6 +1798,9 @@ function getArray() {
   }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
+  }
+  else if (csit241Chapter2.checked) {
+    currentVocabArray = csit241Ch2Vocab
   }
 }
 
