@@ -1692,7 +1692,7 @@ let csit241Ch2Vocab = [
   },
   {
     vocab: 'Fishbone Diagram',
-    definition: 'An analysis tool that represents the possible causes of a problem as a grapgical outline with arrows.'
+    definition: 'An analysis tool that represents the possible causes of a problem as a graphical outline with arrows.'
   },
   {
     vocab: 'Intangible Benefits',
