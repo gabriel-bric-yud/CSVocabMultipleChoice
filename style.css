@@ -173,13 +173,13 @@ legend {
   }
 
   #question {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .playButton {
     width: 9ch;
     height: 9ch;
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .multipleChoice {
@@ -188,7 +188,7 @@ legend {
   }
 
   #choiceA, #choiceB, #choiceC, #choiceD {
-    font-size: 30px;
+    font-size: 20px;
     
   }
 
