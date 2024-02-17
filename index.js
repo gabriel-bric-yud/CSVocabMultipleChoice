@@ -1708,7 +1708,7 @@ let csit241Ch2Vocab = [
   },
   {
     vocab: 'Just-in-time (JIT)',
-    definition: 'The exchange or deliver of information when and where it is needed.'
+    definition: 'The exchange or delivery of information when and where it is needed.'
   },
   {
     vocab: 'Mission Statement',
