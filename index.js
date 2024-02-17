@@ -1760,7 +1760,7 @@ let csit241Ch2Vocab = [
   },
   {
     vocab: 'Tangible Costs',
-    definition: 'Expanses that have a specific dollar value.'
+    definition: 'Expenses that have a specific dollar value.'
   },
   {
     vocab: 'Technical Feasibility',
