@@ -16,6 +16,7 @@ const csit240Chapter2 = document.querySelector('#csit240Chapter2')
 const csit240Chapter3 = document.querySelector('#csit240Chapter3')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 const csit241Chapter2 = document.querySelector('#csit241Chapter2')
+const csit241Chapter3 = document.querySelector('#csit241Chapter3')
 
 
 let i;
@@ -1776,6 +1777,205 @@ let csit241Ch2Vocab = [
   }
 ]
 
+let csit241Ch3Vocab = [
+  {
+    vocab: 'Activity',
+    definition: 'Any work that has a beginning and an end and requires the use of company resources including people, time, or money. Similar to a task.'
+  },
+  {
+    vocab: 'Best-Case Estimate',
+    definition: 'The most optimistic outcome.'
+  },
+  {
+    vocab: 'Bottom-Up Technique',
+    definition: 'A method for analyzing a large, complex project as a series of individual tasks, called project tasks.'
+  },
+  {
+    vocab: 'Brooks Law',
+    definition: 'The observation made by an IBM engineer, that adding more manpower to a late software project only makes it later.'
+  },
+  {
+    vocab: 'Code Reviews',
+    definition: 'A review of a project team members work by other members of the team to spot logical errors. Similar to structured walk-through.'
+  },
+  {
+    vocab: 'Concurrent Task',
+    definition: 'A task that can be completed at the same time as (in parallel with) another task.'
+  },
+  {
+    vocab: 'Critical Path',
+    definition: 'A series of events and activities with no slack time. If any activity fails, the project falls behind schedule.'
+  },
+  {
+    vocab: 'Critical Path Method(CPM)',
+    definition: 'Shows a project as a network diagram of activities and events. Identical to the PERT method.'
+  },
+  {
+    vocab: 'Dependant Tasks',
+    definition: 'A task is said to be dependant when it has to be completed in a serial sequence.'
+  },
+  {
+    vocab: 'Duration',
+    definition: 'The amount of time it will take to complete a task.'
+  },
+  {
+    vocab: 'Events',
+    definition: 'A reference point that marks a major occurence. Also called a milestone.'
+  },
+  {
+    vocab: 'Finish day/date',
+    definition: 'The day or date when a task is scheduled to be finished.'
+  },
+  {
+    vocab: 'Gantt Chart',
+    definition: 'A simple horizontal bar chart that illustrates a schedule.'
+  },
+  {
+    vocab: 'Milestones',
+    definition: 'A reference point that marks a major occurence. Also called an event.'
+  },
+  {
+    vocab: 'Network Diagram',
+    definition: 'A Pert Chart'
+  },
+  {
+    vocab: 'Open-Source',
+    definition: 'Software that is supported by a large group of users and developers.'
+  },
+  {
+    vocab: 'Person-day',
+    definition: 'The amount of work that one person can complete in one day.'
+  },
+  {
+    vocab: 'Program Evaluation Review Technique (PERT/CPM)',
+    definition: 'First developed by the U.S. Navy to manage complex projects using network diagrams of events and activities.'
+  },
+  {
+    vocab: 'Predecessor Tasks',
+    definition: 'A single prior task upon which two or more concurrent tasks depend.'
+  },
+  {
+    vocab: 'Probable-Case Estimate',
+    definition: 'The most likely outcome.'
+  },
+  {
+    vocab: 'Project Coordinator',
+    definition: 'The person who handles administrative responsibilities for the development team and negotiates with users who might have conflicting requirments or want change that requires additional time or expense.'
+  },
+  {
+    vocab: 'Project Leader',
+    definition: 'The person charged with leading a project from a technical perspective.'
+  },
+  {
+    vocab: 'Project Management',
+    definition: 'The process of planning, scheduling, monitoring, controlling, and reporting upon the development of an information system.'
+  },
+  {
+    vocab: 'Project Manager',
+    definition: 'The person charged with managing a project from an administrative perspective.'
+  },
+  {
+    vocab: 'Project Monitoring',
+    definition: 'Guding, Supervising, and coordinating the project teams workload.'
+  },
+  {
+    vocab: 'Project Planning',
+    definition: 'Identifying project tasks and estimating completion time and costs.'
+  },
+  {
+    vocab: 'Project Reporting',
+    definition: 'Providing regular progress reports to management, users and the project team itself.'
+  },
+  {
+    vocab: 'Project Scheduling',
+    definition: 'The creation of a specific timetable to facilitate completion of a project. Also includes staffing the project team.'
+  },
+  {
+    vocab: 'Project Triangle',
+    definition: 'The three major components of a project: cost, scope and time. A project manager tries to find the optimal balance among these factors.'
+  },
+  {
+    vocab: 'Qualitative Risk Analysis',
+    definition: 'Evaluating risk by estimating the probability that it will occur and the degree of impact.'
+  },
+  {
+    vocab: 'Quantitative Risk Analysis',
+    definition: 'Evaluating risk in terms of dollars, time, project scope, or quality.'
+  },
+  {
+    vocab: 'Risk',
+    definition: 'An event that could affect the project negatively'
+  },
+  {
+    vocab: 'Risk Indentification',
+    definition: 'Listing each risk and assessing the likelihood that it could affect a project.'
+  },
+  {
+    vocab: 'Risk Management',
+    definition: 'The process of identifying, evaluating, tracking and controlling risk to minimize their impact.'
+  },
+  {
+    vocab: 'Risk Management Plan',
+    definition: 'Includes a review of a projects scope, stakeholders, budget, schedule, and any other internal or external factors that might affect a project negatively. Includes methods and procedures for dealing with these problems, and contingency plans.'
+  },
+  {
+    vocab: 'Risk Response Plan',
+    definition: 'A proactive effort to anticipate risk and describe an action plan to deal with it.'
+  },
+  {
+    vocab: 'Slack Time',
+    definition: 'The amount of time by which an event can be late without delaying the project.'
+  },
+  {
+    vocab: 'Start day/date',
+    definition: 'The day or date when a task is scheduled to begin.'
+  },
+  {
+    vocab: 'Structured Walk-Through',
+    definition: 'A review of a project teams members work by other members of the team. Similar to Code Reviews.'
+  },
+  {
+    vocab: 'Successor Task',
+    definition: 'Each of the concurrent tasks of a predecessor task.'
+  },
+  {
+    vocab: 'Task',
+    definition: 'Any work that has a beginning and an end and requires the use of company resources including people, time or money. Also called an activity.'
+  },
+  {
+    vocab: 'Task Box',
+    definition: 'A component of a PERT/CPM chart that contains important scheduling and duration information about a task.'
+  },
+  {
+    vocab: 'Task Group',
+    definition: 'A task that represents several activities.'
+  },
+  {
+    vocab: 'Task ID',
+    definition: 'A number or code that uniquely identifies a task.'
+  },
+  {
+    vocab: 'Task Name',
+    definition: 'A brief descriptive name of a task.'
+  },
+  {
+    vocab: 'Task Pattern',
+    definition: 'A logical sequence of tasks in a WBS. Can involve sequential tasks, multiple successor tasks, and multiple predecessor tasks.'
+  },
+  {
+    vocab: 'Weight',
+    definition: 'An important multiplier that managers factor into estimates so they can be analyzed.'
+  },
+  {
+    vocab: 'Work Breakdown Structure (WBS)',
+    definition: 'A project broken down into a series of smaller tasks. Similar to Gantt and PERT/CPM charts.'
+  },
+  {
+    vocab: 'Worst-Case Estimate',
+    definition: 'The most pessimistic outcome.'
+  }
+]
+
 csit240Chapter1.checked = true
 let currentVocabArray = csit240Ch1Vocab
 
@@ -1801,6 +2001,9 @@ function getArray() {
   }
   else if (csit241Chapter2.checked) {
     currentVocabArray = csit241Ch2Vocab
+  }
+  else if (csit241Chapter3.checked) {
+    currentVocabArray = csit241Ch3Vocab
   }
 }
 
