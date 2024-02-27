@@ -1313,7 +1313,7 @@ let csit240Ch3Vocab = [
   },
   {
     vocab: 'Garbage Collection',
-    definition: 'The process of reclaiming memory space that can no longer benused by a program.'
+    definition: 'The process of reclaiming memory space that can no longer be used by a program.'
   },
   {
     vocab: 'Immutable',
