@@ -1333,7 +1333,7 @@ let csit240Ch3Vocab = [
   },
   {
     vocab: 'Package',
-    definition: 'A language-level organization mechanism for classes. Each class in the Java API belongs to a particular package.'
+    definition: 'A language-level organization mechanism for classes. A group of classes.'
   },
   {
     vocab: 'Pseudorandom Number Generator',
