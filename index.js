@@ -1327,6 +1327,18 @@ let csit240Ch3Vocab = [
     vocab: 'Instance',
     definition: 'An object. An object is an instance of a class.'
   },
+    {
+    vocab: 'Instantiation',
+    definition: 'The process of creating a new object.'
+  },
+    {
+    vocab: 'Stream',
+    definition: 'A source of input or destination of output.'
+  },
+    {
+    vocab: 'Pointer',
+    definition: 'A variable that can hold a memory address. Java uses references instead.'
+  },
   {
     vocab: 'New Operator',
     definition: 'Returns a reference to a newly created object.'
