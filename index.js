@@ -11,12 +11,13 @@ const guessWord = document.querySelector('#guessWord')
 const guessDefinition = document.querySelector('#guessDefinition')
 const csit111Midterm = document.querySelector('#csit111Midterm')
 const csit111Final = document.querySelector('#csit111Final')
-const csit240Chapter1 = document.querySelector('#csit240Chapter1')
-const csit240Chapter2 = document.querySelector('#csit240Chapter2')
-const csit240Chapter3 = document.querySelector('#csit240Chapter3')
+const csit210Chapter1 = document.querySelector('#csit210Chapter1')
+const csit210Chapter2 = document.querySelector('#csit210Chapter2')
+const csit210Chapter3 = document.querySelector('#csit210Chapter3')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 const csit241Chapter2 = document.querySelector('#csit241Chapter2')
 const csit241Chapter3 = document.querySelector('#csit241Chapter3')
+const csit241Chapter4 = document.querySelector('#csit241Chapter4')
 
 
 let i;
@@ -1069,7 +1070,7 @@ let csit111FinalVocab = [
   }
 ]
 
-let csit240Ch1Vocab = [
+let csit210Ch1Vocab = [
   {
     vocab: 'Assembly Language',
     definition: 'A low-level language that replaced binary digits with mnemonics.'
@@ -1204,7 +1205,7 @@ let csit240Ch1Vocab = [
   },
 ]
 
-let csit240Ch2Vocab = [
+let csit210Ch2Vocab = [
   {
     vocab: 'ASCII character set',
     definition: 'An early character set for representing English characters and symbols.'
@@ -1290,7 +1291,8 @@ let csit240Ch2Vocab = [
     definition: 'A conversion between one data type and another in which information is not lost.'
   }
 ]
-let csit240Ch3Vocab = [
+
+let csit210Ch3Vocab = [
   {
     vocab: 'Application Programming Inteface (API)',
     definition: 'A set of related classes that supports a particular aspect of programming.'
@@ -1313,7 +1315,7 @@ let csit240Ch3Vocab = [
   },
   {
     vocab: 'Garbage Collection',
-    definition: 'The process of reclaiming memory space that can no longer be used by a program.'
+    definition: 'The process of reclaiming memory space that can no longer benused by a program.'
   },
   {
     vocab: 'Immutable',
@@ -1327,7 +1329,7 @@ let csit240Ch3Vocab = [
     vocab: 'Instance',
     definition: 'An object. An object is an instance of a class.'
   },
-    {
+  {
     vocab: 'Instantiation',
     definition: 'The process of creating a new object.'
   },
@@ -1345,7 +1347,7 @@ let csit240Ch3Vocab = [
   },
   {
     vocab: 'Package',
-    definition: 'A language-level organization mechanism for classes. A group of classes.'
+    definition: 'A language-level organization mechanism for classes. Each class in the Java API belongs to a particular package.'
   },
   {
     vocab: 'Pseudorandom Number Generator',
@@ -1988,8 +1990,227 @@ let csit241Ch3Vocab = [
   }
 ]
 
-csit240Chapter1.checked = true
-let currentVocabArray = csit240Ch1Vocab
+let csit241Ch4Vocab = [
+  {
+    vocab: 'Actor',
+    definition: 'An external enitity with a specific role. In a use case model, they are used to interaction with the system.'
+  },
+  {
+    vocab: 'Brainstorming',
+    definition: 'A fact-finding technique for gaining information through the use of a small group discussion of a specific problem, opportunity or issue.'
+  },
+  {
+    vocab: 'Close-ended questions',
+    definition: 'Queries that limit or restrict the range of responses. Used in the interview process when a specific information of fact verification is desired.'
+  },
+  {
+    vocab: 'Construction Phase',
+    definition: 'A phase that focuses on program and application development tasks similar to the SDLC'
+  },
+  {
+    vocab: 'Cutover Phase',
+    definition: 'A phase that resembles the final task in the SDLC implementation phase, including data conversion, testing, changeover to the new system and user training.'
+  },
+  {
+    vocab: 'Document Review',
+    definition: 'A review of baseline documentation. A useful fact-finding technique that helps an analyst understand how the current system is suposed to work.'
+  },
+  {
+    vocab: 'Engaged Listening',
+    definition: 'The ability to really concentrate on what someone is saying and avoid temptation to hear what is expected. Also includes noticing nonverbal communication.'
+  },
+  {
+    vocab: 'Epic',
+    definition: 'In an agile project, a simple high-level statement of a requirement. Similar to a feature.'
+  },
+  {
+    vocab: 'Fact-Finding',
+    definition: 'The process of gathering requirements.'
+  },
+  {
+    vocab: 'Features',
+    definition: 'In an agile project, a simple high level statment of a requirement. Similar to an epic.'
+  },
+  {
+    vocab: 'Fill-In Form',
+    definition: 'A template used to collect data on the Internet or a company intranet.'
+  },
+  {
+    vocab: 'Functional Decomposition Diagram (FDD)',
+    definition: 'A top-down representation of business functions and processes. Also called a structure chart.'
+  },
+  {
+    vocab: 'Functional Requirement',
+    definition: 'A statement of the services a system provides.'
+  },
+  {
+    vocab: 'Hawthorne Effect',
+    definition: 'A phenomenon where employees who know they are being observed are more productive.'
+  },
+  {
+    vocab: 'Histogram',
+    definition: 'A common tool for showing the distribution of questionnaire or sampling results. It takes the form of a vertical bar chart.'
+  },
+  {
+    vocab: 'Informal Structures',
+    definition: 'An organization based on interpersonal relationships, which can develop form previous work assignments, physical proximity, unofficial procedures, or personal relationships.'
+  },
+  {
+    vocab: 'Interview',
+    definition: 'A planned meeting during which information is obtained from another person.'
+  },
+  {
+    vocab: 'Joint Application Development (JAD)',
+    definition: 'A system development technique that uses a task force of users, managers, and IT professionals who work together to gather information, discuss business needs, and define the new system requirements.'
+  },
+  {
+    vocab: 'Leading Questions',
+    definition: 'Queries that suggest or favor a particular reply.'
+  },
+  {
+    vocab: 'Non-Functional Requirements',
+    definition: 'A statement of operational system constraints.'
+  },
+  {
+    vocab: 'Observation',
+    definition: 'A fact-finding technique where an analyst sees a system in action. Allows for the verification of statements made in interviews.'
+  },
+  {
+    vocab: 'Open-Ended Questions',
+    definition: 'Queries that allow for a range of answers. They encourage spontaneous and unstructured responses and are useful in understanding a larger process.'
+  },
+  {
+    vocab: 'Personal Information Manager (PIM)',
+    definition: 'A tool that helps manage tasks and schedules. Many handheld devices also include this function.'
+  },
+  {
+    vocab: 'Pool',
+    definition: 'The overall diagram in BPMN.'
+  },
+  {
+    vocab: 'Productivity Software',
+    definition: 'Applications such as word processing, spreadsheet, database management, and presentation graphics programs.'
+  },
+  {
+    vocab: 'Questionnaire',
+    definition: 'A document containing a number of standard questions that can be sent to many individuals.'
+  },
+  {
+    vocab: 'Random Sample',
+    definition: 'A selection taken in a random, unplanned manner.'
+  },
+  {
+    vocab: 'Range-of-Response Questions',
+    definition: 'Close-ended questions that ask the person to evaluate something by providing limited answers to specific responses or on a numeric scale.'
+  },
+  {
+    vocab: 'Rapid Application Development (RAD)',
+    definition: 'A team-based technique that speeds up information systems development and produces a function information system.'
+  },
+  {
+    vocab: 'Requirements Definitions',
+    definition: 'A description of the system requirements from the users point of view.'
+  },
+  {
+    vocab: 'Requirements Elicitation',
+    definition: 'The process of gathering requirements.'
+  },
+  {
+    vocab: 'Requirements Planning Phase',
+    definition: 'A phase that combines elements of the systems planning and systems analysis phases of the SDLC.'
+  },
+  {
+    vocab: 'Requirements Specification',
+    definition: 'A description of the system requirements from the analyst or engineering teams point of view.'
+  },
+  {
+    vocab: 'Research',
+    definition: 'An important fact-finding technique that includes the review of journals, periodicals, and books to obtain background informations, technical material, and news about industry trends and developments.'
+  },
+  {
+    vocab: 'Sampling',
+    definition: 'A process where an analyst collects examples of actual documents, which could include records, reports, or various forms.'
+  },
+  {
+    vocab: 'Scalability',
+    definition: 'A characteristic of a system, implying that the system can be expanded, modified, or downsized easily to meet the rapidly changing needs of a business enterprise.'
+  },
+  {
+    vocab: 'Scenarios',
+    definition: 'In an agile project, a real-world example of how users will interact with the system.'
+  },
+  {
+    vocab: 'Scrum',
+    definition: 'A popular technique for agile project management. Team members play specific roles and interact in intense sessions.'
+  },
+  {
+    vocab: 'Sequence Diagram',
+    definition: 'A UML diagram that shows the timing of transactions between objects as they occur during system execution.'
+  },
+  {
+    vocab: 'Site Visit',
+    definition: 'A trip to a physical location to observe a system in use at another location.'
+  },
+  {
+    vocab: 'Stratified Sample',
+    definition: 'A set metric is collected across functional areas. '
+  },
+  {
+    vocab: 'Storyboards',
+    definition: 'In an agile project, a simple graphic organizer that helps systems analysts visualize the status of a project.'
+  },
+  {
+    vocab: 'Structured Brainstorming',
+    definition: 'A group discussion where each participant speaks when it is his or her turn or passes.'
+  },
+  {
+    vocab: 'Survey',
+    definition: 'A document containing a number of standard questions that can be sent to many individuals. Also called a questionnaire.'
+  },
+  {
+    vocab: 'Swim Lanes',
+    definition: 'In a business process diagram, the overall diagram is called a pool and the designated customer areas are called this.'
+  },
+  {
+    vocab: 'SysML',
+    definition: 'A dialect of UML 2, used for representing requirements.'
+  },
+  {
+    vocab: 'System Requirements',
+    definition: 'A characteristic or feature that must be included in an information system to satisfy business requirements and be acceptable to users.'
+  },
+  {
+    vocab: 'Systematic Sample',
+    definition: 'A sample that occurs at a predetermined periodicity.'
+  },
+  {
+    vocab: 'Traceability',
+    definition: 'The ability to follow a requirement backward to its origins and forward through the SDLC to link design documents, code fragments and test artifacts.'
+  },
+  {
+    vocab: 'Unified Modeling Language (UML)',
+    definition: 'A widely used method of visualizing and documenting software systems design. Uses object-oriented design concepts, but it is independant of any specific programming language and can be used to describe business processes and requirements generally.'
+  },
+  {
+    vocab: 'Unstructured Brainstorming',
+    definition: 'A group discussion where any participant can speak at any time.'
+  },
+  {
+    vocab: 'Use Case Diagram',
+    definition: 'A visual representation that illustrates the interaction between users and the information system in UML.'
+  },
+  {
+    vocab: 'User Design Phase',
+    definition: 'Users interact with systems analysts and develop models and prototypes that represent all systems processes, outputs, and inputs.'
+  },
+  {
+    vocab: 'User Stories',
+    definition: 'In an agile project, a set of more refined requirements derived from features.'
+  }
+]
+
+csit210Chapter1.checked = true
+let currentVocabArray = csit210Ch1Vocab
 
 
 function getArray() {
@@ -1999,14 +2220,14 @@ function getArray() {
   else if (csit111Midterm.checked) {
     currentVocabArray = csit111MidtermVocab
   }
-  else if (csit240Chapter1.checked) {
-    currentVocabArray = csit240Ch1Vocab
+  else if (csit210Chapter1.checked) {
+    currentVocabArray = csit210Ch1Vocab
   }
-  else if (csit240Chapter2.checked) {
-    currentVocabArray = csit240Ch2Vocab
+  else if (csit210Chapter2.checked) {
+    currentVocabArray = csit210Ch2Vocab
   }
-  else if (csit240Chapter3.checked) {
-    currentVocabArray = csit240Ch3Vocab
+  else if (csit210Chapter3.checked) {
+    currentVocabArray = csit210Ch3Vocab
   }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
@@ -2016,6 +2237,9 @@ function getArray() {
   }
   else if (csit241Chapter3.checked) {
     currentVocabArray = csit241Ch3Vocab
+  }
+  else if (csit241Chapter4.checked) {
+    currentVocabArray = csit241Ch4Vocab
   }
 }
 
@@ -2108,10 +2332,6 @@ function checkAnswer() {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 
 
