@@ -14,6 +14,7 @@ const csit111Final = document.querySelector('#csit111Final')
 const csit210Chapter1 = document.querySelector('#csit210Chapter1')
 const csit210Chapter2 = document.querySelector('#csit210Chapter2')
 const csit210Chapter3 = document.querySelector('#csit210Chapter3')
+const csit210Chapter4 = document.querySelector('#csit210Chapter4')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 const csit241Chapter2 = document.querySelector('#csit241Chapter2')
 const csit241Chapter3 = document.querySelector('#csit241Chapter3')
@@ -1359,6 +1360,105 @@ let csit210Ch3Vocab = [
   }
 ]
 
+let csit210Ch4Vocab = [
+  {
+    vocab: 'Block Statement',
+    definition: 'A collection of statements enclosed in braces. Can be used wherever syntax rules call for a single statement.'
+  },
+  {
+    vocab: 'Boolean Expression',
+    definition: 'An expression that evaluates to either true or false.'
+  },
+  {
+    vocab: 'Break Statement',
+    definition: 'A statement used to end a particular case in a switch statement.'
+  },
+  {
+    vocab: 'Conditional Statement',
+    definition: 'A statement that determines which statement to execute next based on a boolean condition. Also called a selection statement'
+  },
+  {
+    vocab: 'Do Statement',
+    definition: 'A loop that evaluates its boolean condition after executing its body at least once.'
+  },
+  {
+    vocab: 'Equality Operator',
+    definition: 'An operator that determines whether two elements are equal (or not equal) to each other.'
+  },
+  {
+    vocab: 'Flow of Control',
+    definition: 'The order in which statements are executed in a running program.'
+  },
+  {
+    vocab: 'For Statement',
+    definition: 'A loop that includes the initialization, condition, and increment portions in the loop header.'
+  },
+  {
+    vocab: 'If Statement',
+    definition: 'A conditional statement that makes a decision based on a boolean condition.'
+  },
+  {
+    vocab: 'Infinite Loop',
+    definition: "A loop that doesn't terminate due to the logic of the program."
+  },
+  {
+    vocab: 'Iterator',
+    definition: 'An object that allows you to process the elements of a collection one at a time.'
+  },
+  {
+    vocab: 'Logical AND operation',
+    definition: 'Produces a true result if both operands are true, and false otherwise.'
+  },
+  {
+    vocab: 'Logical NOT operation',
+    definition: 'Produces the opposite of its boolean operand'
+  },
+  {
+    vocab: 'Logical operator',
+    definition: 'An operator that produces a boolean result based on one or more other boolean results.'
+  },
+  {
+    vocab: 'Logical OR operation',
+    definition: 'Produces a true result if one or both operands are true, and false otherwise.'
+  },
+  {
+    vocab: 'Loop',
+    definition: 'A repetition statement'
+  },
+  {
+    vocab: 'Nested If Statement',
+    definition: 'One if statement enclosed and controlled by another.'
+  },
+  {
+    vocab: 'Nested Loop',
+    definition: 'A loop that is completely enclosed within another loop.'
+  },
+  {
+    vocab: 'Relaional Operator',
+    definition: 'An operator that determines the relative ordering of two values.'
+  },
+  {
+    vocab: 'Repetition Statement',
+    definition: 'A statement that allows a programming statement to be executed over and over again. Also called a loop.'
+  },
+  {
+    vocab: 'Runing Sum',
+    definition: 'A variable used to maintain the sum of all values processed so far.'
+  },
+  {
+    vocab: 'Switch Statement',
+    definition: 'A conditional statement that maps an expression to one of several cases to determine which statement to execute next.'
+  },
+  {
+    vocab: 'Trut Table',
+    definition: 'A table that lists all possible combinations of values and outcomes ina a boolean expression.'
+  },
+  {
+    vocab: 'While Statement',
+    definition: 'A loop that evaluates its boolean condition first to determine whether its body should be executed again.'
+  }
+]
+
 let csit241Ch1Vocab = [
   {
     vocab: 'Agile Methods',
@@ -2228,6 +2328,9 @@ function getArray() {
   }
   else if (csit210Chapter3.checked) {
     currentVocabArray = csit210Ch3Vocab
+  }
+  else if (csit210Chapter4.checked) {
+    currentVocabArray = csit210Ch4Vocab
   }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
