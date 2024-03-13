@@ -15,10 +15,12 @@ const csit210Chapter1 = document.querySelector('#csit210Chapter1')
 const csit210Chapter2 = document.querySelector('#csit210Chapter2')
 const csit210Chapter3 = document.querySelector('#csit210Chapter3')
 const csit210Chapter4 = document.querySelector('#csit210Chapter4')
+const csit210Midterm = document.querySelector('#csit210Midterm')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 const csit241Chapter2 = document.querySelector('#csit241Chapter2')
 const csit241Chapter3 = document.querySelector('#csit241Chapter3')
 const csit241Chapter4 = document.querySelector('#csit241Chapter4')
+const csit241Midterm = document.querySelector('#csit241Midterm')
 
 
 let i;
@@ -1459,6 +1461,8 @@ let csit210Ch4Vocab = [
   }
 ]
 
+let csit210MidtermVocab = [...csit210Ch1Vocab, ... csit210Ch2Vocab, ...csit210Ch3Vocab, ...csit210Ch4Vocab]
+
 let csit241Ch1Vocab = [
   {
     vocab: 'Agile Methods',
@@ -2309,6 +2313,9 @@ let csit241Ch4Vocab = [
   }
 ]
 
+let csit241MidtermVocab = [...csit241Ch1Vocab, ... csit241Ch2Vocab, ...csit241Ch3Vocab, ...csit241Ch4Vocab]
+
+
 csit210Chapter1.checked = true
 let currentVocabArray = csit210Ch1Vocab
 
@@ -2332,6 +2339,9 @@ function getArray() {
   else if (csit210Chapter4.checked) {
     currentVocabArray = csit210Ch4Vocab
   }
+  else if (csit210Midterm.checked) {
+    currentVocabArray = csit210MidtermVocab
+  }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
   }
@@ -2343,6 +2353,9 @@ function getArray() {
   }
   else if (csit241Chapter4.checked) {
     currentVocabArray = csit241Ch4Vocab
+  }
+  else if (csit241Midterm.checked) {
+    currentVocabArray = csit241MidtermVocab
   }
 }
 
