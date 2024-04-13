@@ -16,6 +16,7 @@ const csit210Chapter2 = document.querySelector('#csit210Chapter2')
 const csit210Chapter3 = document.querySelector('#csit210Chapter3')
 const csit210Chapter4 = document.querySelector('#csit210Chapter4')
 const csit210Midterm = document.querySelector('#csit210Midterm')
+const csit210Chapter5 = document.querySelector('#csit210Chapter5')
 const csit241Chapter1 = document.querySelector('#csit241Chapter1')
 const csit241Chapter2 = document.querySelector('#csit241Chapter2')
 const csit241Chapter3 = document.querySelector('#csit241Chapter3')
@@ -1463,6 +1464,141 @@ let csit210Ch4Vocab = [
 
 let csit210MidtermVocab = [...csit210Ch1Vocab, ... csit210Ch2Vocab, ...csit210Ch3Vocab, ...csit210Ch4Vocab]
 
+let csit210Ch5Vocab = [
+  {
+    vocab: 'Accessor Method',
+    definition: 'A method that provides access to the attributes of an object but does not modify it.'
+  },
+  {
+    vocab: 'Actual Parameter',
+    definition: 'A Value that is passed into a method when it is invoked. Also called an argument.'
+  },
+  {
+    vocab: 'Aggregation',
+    definition: 'A relationship among objects in which one object is made up of other objects.'
+  },
+  {
+    vocab: 'Behavior',
+    definition: 'The set of operations defined by the public methods of an object.'
+  },
+  {
+    vocab: 'Black-box testing',
+    definition: 'Testing a program with attention to the inputs and outputs of the code.'
+  },
+  {
+    vocab: 'Client',
+    definition: 'A part of a software system that uses an object.'
+  },
+  {
+    vocab: 'Debugging',
+    definition: 'The act of locating and correcting run-time and logical errors in a program.'
+  },
+  {
+    vocab: 'Defect Testing',
+    definition: 'Executing a program with specific inputs in order to find errors.'
+  },
+  {
+    vocab: 'Encapsulation',
+    definition: 'The characteristic of an object that keeps its data protected from external modifications.'
+  },
+  {
+    vocab: 'Formal Parameter',
+    definition: 'A parameter name in the header of a method definition.'
+  },
+  {
+    vocab: 'Instance Data',
+    definition: 'Data defined at the class level and created in memory for every object.'
+  },
+  {
+    vocab: 'Integeration Testing',
+    definition: 'Testing modules as they are incorporated with each other focusing on the communication between them.'
+  },
+  {
+    vocab: 'Interface',
+    definition: 'The set of public methods that define the operationgs that an object makes to other objects.'
+  },
+  {
+    vocab: 'Local Data',
+    definition: 'Data that are declared within a method.'
+  },
+  {
+    vocab: 'Method Overloading',
+    definition: 'The ability to declare multiple methods with the same name in a class as long as the method signatures are distinct.'
+  },
+  {
+    vocab: 'Method Signature',
+    definition: 'The methods name, along with the number, type and order of the mathods parameters.'
+  },
+  {
+    vocab: 'Modifier',
+    definition: 'A method that changes the attributes of an object.'
+  },
+  {
+    vocab: 'Private Visibility',
+    definition: 'Restricting access to an object to the methods within that object.'
+  },
+  {
+    vocab: 'Public Visibility',
+    definition: 'The ability to be referenced from outside an object.'
+  },
+  {
+    vocab: 'Return Statement',
+    definition: 'A statement that causes a method to terminate and possibly return a value to the calling method.'
+  },
+  {
+    vocab: 'Review',
+    definition: 'A meeting in which several people examine a design document or section of code in order to discover problems.'
+  },
+  {
+    vocab: 'Scope',
+    definition: 'The area of a program in which a variable can be referenced.'
+  },
+  {
+    vocab: 'Service Methods',
+    definition: 'A public method that provides a service to the clients of an object.'
+  },
+  {
+    vocab: 'State',
+    definition: 'The current values of the attributes (instance variables) of an object.'
+  },
+  {
+    vocab: 'Static Methods',
+    definition: 'A method that is invoked through the class name and canot refer to instance data.'
+  },
+  {
+    vocab: 'Static Variable',
+    definition: 'A variable that is shared among all instances of a class. Also called a class variable.'
+  },
+  {
+    vocab: 'Support Methods',
+    definition: 'A method with private visibility, used to support another method in its task.'
+  },
+  {
+    vocab: 'System Testing',
+    definition: 'The process of evaluating a program to discover defects.'
+  },
+  {
+    vocab: 'Test Suit',
+    definition: 'A set of tests that covers various aspects of a software system and can be repeated when needed.'
+  },
+  {
+    vocab: 'Unit Testing',
+    definition: 'Creating specific tests for small units of code (usually a method).'
+  },
+  {
+    vocab: 'Unified Modeling Language (UML)',
+    definition: 'A popular notation for representing designs of an object-oriented program.'
+  },
+  {
+    vocab: 'Visibility Modifiers',
+    definition: 'One of the three modifiers (public, private and protected) that determine what other parts of a software system can access a variable or method.'
+  },
+  {
+    vocab: 'White-Box Testing',
+    definition: 'Testing a program with attention to the logic of the code.'
+  }
+]
+
 let csit241Ch1Vocab = [
   {
     vocab: 'Agile Methods',
@@ -2341,6 +2477,9 @@ function getArray() {
   }
   else if (csit210Midterm.checked) {
     currentVocabArray = csit210MidtermVocab
+  }
+  else if (csit210Chapter5.checked) {
+    currentVocabArray = csit210Ch5Vocab
   }
   else if (csit241Chapter1.checked) {
     currentVocabArray = csit241Ch1Vocab
